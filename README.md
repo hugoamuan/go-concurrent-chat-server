@@ -1,7 +1,5 @@
 # Go Concurrent Chat Server Overview
 
-These notes summarize the layout and behavior of the chat server and client so you can quickly recall how everything fits together.
-
 ## Repository Structure
 - `chat/app/server/main.go`: Minimal entry point that boots the TCP chat server on port 6666 by calling `server.Start`.
 - `chat/app/client/main.go`: CLI chat client that connects to the server at `127.0.0.1:6666`, starts a background listener for server output, and forwards user input lines to the server.
